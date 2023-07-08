@@ -1,9 +1,14 @@
+import icon from "./logo192.png";
+
 const App = () => {
   let a = () => {
     Notification.requestPermission().then((perm) => {
       if (perm === "granted") {
         console.log("working");
-        return new Notification("Permission granted");
+        return new Notification("Title", {
+          body: "Success",
+          icon: icon,
+        });
       }
     });
   };
