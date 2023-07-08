@@ -6,7 +6,6 @@ const App = () => {
         return new Notification("Permission granted");
       }
     });
-    new Notification("Permission granted");
   };
 
   return (
